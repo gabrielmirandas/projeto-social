@@ -7,8 +7,8 @@
 }
 
 html, body{
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: black;
 }
 
@@ -20,27 +20,43 @@ body{
 
 main{
   position: relative;
-  height: 100vh;
+  height: 100%;
   
 }
 
 section#telefone{
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  height: 627px;
-  width: 311px;
-  background: url('../imagens/frame-iphone.png') no-repeat;
+ width: 248px;
+ height: 500px;
+  background: url('../imagens/frame-iphone2.png') no-repeat;
 }
 
 iframe#tela{
   position: relative;
-  top: 80px;
-  left: 23px;
-  height: 471px;
-  width: 269px;
+  top: 65px;
+  left: 19px;
+  height: 374px;
+  width: 212px;
+}
 
+section#redessociais img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
+}
 
+section#redessociais{
+  text-align: right;
+}
+
+section#redessociais img:hover{
+  border:2px solid rgba(255, 255, 255, 0.605);
+  transform: translate(-3px, -3px);
+  box-shadow: 5px 5px 1opx rgba(0, 0, 0, 0.555);
+  transition: transform 0.5s, border 1s;
 }
